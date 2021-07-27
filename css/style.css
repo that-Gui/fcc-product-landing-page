@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+}
+
+header{
+    margin: 0;
+    padding: .5rem;
+    
+}
+
+/* .container{
+    width: 80%;
+    background-color: aqua;
+    margin: 0 auto;
+    max-width: 80%;
+} */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    margin: 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    position: fixed;
+}
+
+.nav-link{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+#hero {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+@media (max-width: 680px) {
+    h1{
+        font-size: 2rem;
+    }
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=email]{
+    width: 50%;
+    max-width: 300px;
+    padding: 8px 8px;
+    margin: 8px auto;
+    border-radius: 8px;
+}
+
+input[type=submit]{
+    width: 50%;
+    max-width: 300px;
+    padding: 8px 8px;
+    margin: 8px auto;
+    border-radius: 8px;
+}
+
+.cardrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+h4{
+    background: linear-gradient(to right, #ff6600, #d30070);
+    color: #fff;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.card{
+    flex-grow: 1;
+    max-width: 25%;
+    background: #fff;
+    text-align: center;
+    transition: 0.3s;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .cardrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+    
+    .card{
+        max-width: 100%;
+        background: #fff;
+        text-align: center;
+        transition: 0.3s;
+        margin: 1rem;
+        border-radius: 8px;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.card ul{
+    list-style: none;
+    padding: 1rem;
+    line-height: 1.3rem;
+}
+
+.btn{
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #f3f3f3;
+    border: none;
+    font-size: 1rem;
+}
+
+.midsection{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 3rem auto 3rem;
+
+    width: 80vw;
+}
+
+h3{
+    color: #ff3c00;
+}
+
+.video {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+  
+.video > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: #fff;
+}
